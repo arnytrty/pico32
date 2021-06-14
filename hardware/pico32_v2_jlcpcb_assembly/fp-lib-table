@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name Pico32)(type KiCad)(uri ${KIPRJMOD}/Pico32.pretty)(options "")(descr ""))
+)

@@ -1,0 +1,330 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr User 8268 5827
+encoding utf-8
+Sheet 1 1
+Title "Pico32"
+Date "2021-05-23"
+Rev "2.1"
+Comp "Arnošt Trtúšek"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Antenna AE1
+U 1 1 60AB3408
+P 3000 1250
+F 0 "AE1" H 3080 1239 50  0000 L CNN
+F 1 "Antenna" H 3080 1148 50  0000 L CNN
+F 2 "Pico32:AN9520-245" H 3000 1250 50  0001 C CNN
+F 3 "~" H 3000 1250 50  0001 C CNN
+F 4 "C99665" H 3000 1250 50  0001 C CNN "LCSC"
+	1    3000 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2900 1550 3000 1550
+Wire Wire Line
+	3000 1550 3000 1450
+$Comp
+L power:+3V3 #PWR09
+U 1 1 60ABDC3E
+P 2050 1250
+F 0 "#PWR09" H 2050 1100 50  0001 C CNN
+F 1 "+3V3" H 2065 1423 50  0000 C CNN
+F 2 "" H 2050 1250 50  0001 C CNN
+F 3 "" H 2050 1250 50  0001 C CNN
+	1    2050 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 60ABE784
+P 2100 4550
+F 0 "#PWR010" H 2100 4300 50  0001 C CNN
+F 1 "GND" H 2105 4377 50  0000 C CNN
+F 2 "" H 2100 4550 50  0001 C CNN
+F 3 "" H 2100 4550 50  0001 C CNN
+	1    2100 4550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1900 1350 1900 1300
+Wire Wire Line
+	1900 1300 2000 1300
+Wire Wire Line
+	2200 1300 2200 1350
+Wire Wire Line
+	2050 1250 2050 1300
+Connection ~ 2050 1300
+Wire Wire Line
+	2050 1300 2100 1300
+Wire Wire Line
+	2000 1350 2000 1300
+Connection ~ 2000 1300
+Wire Wire Line
+	2000 1300 2050 1300
+Wire Wire Line
+	2100 1350 2100 1300
+Connection ~ 2100 1300
+Wire Wire Line
+	2100 1300 2200 1300
+NoConn ~ 2900 4250
+$Comp
+L power:VCC #PWR01
+U 1 1 60ACA040
+P 4150 1300
+F 0 "#PWR01" H 4150 1150 50  0001 C CNN
+F 1 "VCC" H 4165 1473 50  0000 C CNN
+F 2 "" H 4150 1300 50  0001 C CNN
+F 3 "" H 4150 1300 50  0001 C CNN
+	1    4150 1300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 1350 4200 1350
+Wire Wire Line
+	4200 1450 4150 1450
+$Comp
+L power:GND #PWR03
+U 1 1 60ACBD63
+P 4500 1750
+F 0 "#PWR03" H 4500 1500 50  0001 C CNN
+F 1 "GND" H 4505 1577 50  0000 C CNN
+F 2 "" H 4500 1750 50  0001 C CNN
+F 3 "" H 4500 1750 50  0001 C CNN
+	1    4500 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR04
+U 1 1 60ACE35F
+P 4900 1250
+F 0 "#PWR04" H 4900 1100 50  0001 C CNN
+F 1 "+3V3" H 4915 1423 50  0000 C CNN
+F 2 "" H 4900 1250 50  0001 C CNN
+F 3 "" H 4900 1250 50  0001 C CNN
+	1    4900 1250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4800 1350 4900 1350
+Wire Wire Line
+	4900 1350 4900 1250
+$Comp
+L Device:C C2
+U 1 1 60ACEC07
+P 4900 1700
+F 0 "C2" H 5015 1746 50  0000 L CNN
+F 1 "1uF" H 5015 1655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4938 1550 50  0001 C CNN
+F 3 "~" H 4900 1700 50  0001 C CNN
+F 4 "C52923" H 4900 1700 50  0001 C CNN "LCSC"
+	1    4900 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C4
+U 1 1 60AD254A
+P 900 1750
+F 0 "C4" H 1015 1796 50  0000 L CNN
+F 1 "1uF" H 1015 1705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 938 1600 50  0001 C CNN
+F 3 "~" H 900 1750 50  0001 C CNN
+F 4 "C52923" H 900 1750 50  0001 C CNN "LCSC"
+	1    900  1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR05
+U 1 1 60AD451C
+P 4900 1850
+F 0 "#PWR05" H 4900 1600 50  0001 C CNN
+F 1 "GND" H 4905 1677 50  0000 C CNN
+F 2 "" H 4900 1850 50  0001 C CNN
+F 3 "" H 4900 1850 50  0001 C CNN
+	1    4900 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1550 4900 1350
+Connection ~ 4900 1350
+$Comp
+L Device:R R1
+U 1 1 60AD6A7E
+P 900 1350
+F 0 "R1" H 970 1396 50  0000 L CNN
+F 1 "1k" H 970 1305 50  0000 L CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 830 1350 50  0001 C CNN
+F 3 "~" H 900 1350 50  0001 C CNN
+F 4 "C11702" H 900 1350 50  0001 C CNN "LCSC"
+	1    900  1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+3V3 #PWR07
+U 1 1 60AD7D99
+P 900 1200
+F 0 "#PWR07" H 900 1050 50  0001 C CNN
+F 1 "+3V3" H 915 1373 50  0000 C CNN
+F 2 "" H 900 1200 50  0001 C CNN
+F 3 "" H 900 1200 50  0001 C CNN
+	1    900  1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 60AD8B11
+P 900 1900
+F 0 "#PWR08" H 900 1650 50  0001 C CNN
+F 1 "GND" H 905 1727 50  0000 C CNN
+F 2 "" H 900 1900 50  0001 C CNN
+F 3 "" H 900 1900 50  0001 C CNN
+	1    900  1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	900  1600 900  1550
+Wire Wire Line
+	1300 1550 900  1550
+Connection ~ 900  1550
+Wire Wire Line
+	900  1550 900  1500
+NoConn ~ 1300 2050
+NoConn ~ 1300 1950
+NoConn ~ 1300 1850
+NoConn ~ 1300 1750
+$Comp
+L Device:C C1
+U 1 1 60ADC660
+P 4150 1750
+F 0 "C1" H 4265 1796 50  0000 L CNN
+F 1 "1uF" H 4265 1705 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4188 1600 50  0001 C CNN
+F 3 "~" H 4150 1750 50  0001 C CNN
+F 4 "C52923" H 4150 1750 50  0001 C CNN "LCSC"
+	1    4150 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 60ADCDB4
+P 4150 1900
+F 0 "#PWR02" H 4150 1650 50  0001 C CNN
+F 1 "GND" H 4155 1727 50  0000 C CNN
+F 2 "" H 4150 1900 50  0001 C CNN
+F 3 "" H 4150 1900 50  0001 C CNN
+	1    4150 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4150 1600 4150 1450
+Connection ~ 4150 1450
+Wire Wire Line
+	4150 1350 4150 1300
+Connection ~ 4150 1350
+Wire Wire Line
+	4150 1350 4150 1450
+$Comp
+L Device:C C3
+U 1 1 60AE04CA
+P 5250 1700
+F 0 "C3" H 5365 1746 50  0000 L CNN
+F 1 "10nF" H 5365 1655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 5288 1550 50  0001 C CNN
+F 3 "~" H 5250 1700 50  0001 C CNN
+F 4 "C15195" H 5250 1700 50  0001 C CNN "LCSC"
+	1    5250 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR06
+U 1 1 60AE04D0
+P 5250 1850
+F 0 "#PWR06" H 5250 1600 50  0001 C CNN
+F 1 "GND" H 5255 1677 50  0000 C CNN
+F 2 "" H 5250 1850 50  0001 C CNN
+F 3 "" H 5250 1850 50  0001 C CNN
+	1    5250 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5250 1550 5250 1450
+Wire Wire Line
+	5250 1450 4800 1450
+NoConn ~ 2900 4050
+NoConn ~ 2900 3950
+NoConn ~ 2900 2850
+NoConn ~ 2900 2750
+NoConn ~ 2900 2450
+NoConn ~ 2900 2350
+NoConn ~ 1300 3450
+NoConn ~ 1300 3350
+NoConn ~ 1300 3250
+NoConn ~ 1300 3150
+Text GLabel 2900 2050 2    50   Input ~ 0
+RXD
+Text GLabel 2900 1850 2    50   Input ~ 0
+TXD
+Text GLabel 2900 1750 2    50   Input ~ 0
+IO0
+Text GLabel 2900 3050 2    50   Input ~ 0
+IO19
+NoConn ~ 2900 2550
+$Comp
+L RF_Module:ESP32-PICO-D4 U2
+U 1 1 60AA679C
+P 2100 2950
+F 0 "U2" H 1450 1400 50  0000 C CNN
+F 1 "ESP32-PICO-D4" H 2500 1400 50  0000 C CNN
+F 2 "Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.3x5.3mm" H 2100 1250 50  0001 C CNN
+F 3 "https://www.espressif.com/sites/default/files/documentation/esp32-pico-d4_datasheet_en.pdf" H 2350 1950 50  0001 C CNN
+F 4 "C193707" H 2100 2950 50  0001 C CNN "LCSC"
+	1    2100 2950
+	1    0    0    -1  
+$EndComp
+Text GLabel 2900 3350 2    50   Input ~ 0
+IO23
+Text GLabel 2900 2950 2    50   Input ~ 0
+IO18
+Text GLabel 1300 3050 0    50   Input ~ 0
+IO17
+Text GLabel 1300 2950 0    50   Input ~ 0
+IO16
+Text GLabel 2900 1950 2    50   Input ~ 0
+IO2
+Text GLabel 2900 2150 2    50   Input ~ 0
+IO4
+Text GLabel 2900 2650 2    50   Input ~ 0
+IO13
+Text GLabel 2900 3150 2    50   Input ~ 0
+IO21
+Text GLabel 2900 3250 2    50   Input ~ 0
+IO22
+Text GLabel 2900 3450 2    50   Input ~ 0
+IO25
+Text GLabel 2900 3550 2    50   Input ~ 0
+IO26
+Text GLabel 2900 3850 2    50   Input ~ 0
+IO33
+Text GLabel 2900 3750 2    50   Input ~ 0
+IO32
+Text GLabel 2900 3650 2    50   Input ~ 0
+IO27
+NoConn ~ 2900 2250
+$Comp
+L Regulator_Linear:TPS79333-EP U1
+U 1 1 60AB795B
+P 4500 1450
+F 0 "U1" H 4500 1792 50  0000 C CNN
+F 1 "TPS79333-EP" H 4500 1701 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23-5" H 4500 1775 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/tps79333-ep.pdf" H 4500 1500 50  0001 C CNN
+F 4 "C9840" H 4500 1450 50  0001 C CNN "LCSC"
+	1    4500 1450
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC

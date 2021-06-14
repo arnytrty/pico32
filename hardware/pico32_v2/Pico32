@@ -1,0 +1,7 @@
+Comment,Designator,Footprint,LCSC
+"Antenna","AE1","Pico32:AN9520-245","C99665"
+"1uF","C1,C2,C4","Capacitor_SMD:C_0402_1005Metric","C52923"
+"10nF","C3","Capacitor_SMD:C_0402_1005Metric","C15195"
+"1k","R1","Resistor_SMD:R_0402_1005Metric","C11702"
+"TPS73633DBV","U1","Package_TO_SOT_SMD:SOT-23-5","C28038"
+"ESP32-PICO-D4","U2","Package_DFN_QFN:QFN-48-1EP_7x7mm_P0.5mm_EP5.3x5.3mm","C193707"
